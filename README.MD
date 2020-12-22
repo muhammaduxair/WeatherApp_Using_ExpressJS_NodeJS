@@ -8,6 +8,6 @@
 
 ### step:2 `npm start`
 
-#### This App is Hosted in This Link [https://weather-app-uzair.herokuapp.com/] (https://weather-app-uzair.herokuapp.com/)
+#### This App is Hosted in This Link [https://weather-app-uzair.herokuapp.com/](https://weather-app-uzair.herokuapp.com/)
 
 ## Author: Muhammad Uzair
