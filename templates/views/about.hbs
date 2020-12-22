@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>links}}
+    <title>Weather App</title>
+</head>
+
+<body>
+    <!-- navigation bar  -->
+    {{>navigation}}
+
+    <!-- header area  -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-12 col-md-10 mx-auto">
+                <div class="row">
+                    <div class="col-12 col-md-5 mian_header_right">
+                        <figure>
+                            <img src="./assets/myimg.png" alt="my_image">
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-7 mian_header_left">
+                        <p>Hi! My Name is <span class="txt_clr"> Muhammad Uzair</span>
+                        </p>
+                        <h1>I am Expert In <span class="txt_clr">#MERN Technology.</span> </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer area with links -->
+    {{>footer}}
+
+</body>
+
+</html>

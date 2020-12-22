@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>links}}
+    <title>Weather App</title>
+</head>
+
+<body>
+    <!-- navigation bar  -->
+    {{>navigation}}
+
+    <!-- header area  -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-12 col-md-10 mx-auto">
+                <div class="row">
+                    <div class="col-12 col-md-12 errorArea">
+                        <figure>
+                            <img src="./assets/error.jpg" alt="error iamge">
+                        </figure>
+                        <p>{{errorMsg}}</p>
+                        <button class="btn btn-danger"><a href="/">Go Back</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer area with links -->
+    {{>footer}}
+
+</body>
+
+</html>

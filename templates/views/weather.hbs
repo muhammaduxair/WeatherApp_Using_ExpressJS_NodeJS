@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>links}}
+    <title>Weather App</title>
+</head>
+
+<body>
+    <!-- navigation bar  -->
+    {{>navigation}}
+
+    <!-- header area  -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-12 col-md-10 mx-auto">
+                <div class="row">
+                    <div class="col-12 col-md-12 mian_weather_app">
+                        <div class="search_box">
+                            <input type="text" placeholder="Enter Your City Name" id="cityInput">
+                            <button id="searchBtn"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="main_viewbox">
+                            <div class="top_layer">
+                                <p id="day">Thursday</p>
+                                <p id="time">12:00 AM</p>
+                                <p id="date">10-12-2020</p>
+                            </div>
+                            <div class="bottom_layer">
+                                <h1 id="city">Enter City Name</h1>
+                                <div class="status" style="display: none;">
+                                    <h1>20 <sup>o</sup>C</h1>
+                                    <i id="clouds" class="fas fa-cloud"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer area with links -->
+    {{>footer}}
+    <script src="./main.js"></script>
+</body>
+
+</html>

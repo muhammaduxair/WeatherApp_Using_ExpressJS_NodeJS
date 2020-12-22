@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Righteous&display=swap");
+/* 
+font-family: 'Bebas Neue', cursive;
+font-family: 'Righteous', cursive;
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* set variables  */
+:root {
+  --mian_clr: #007aff;
+  --main_bg: #4abfa4;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_menu {
+  background-color: var(--main_bg);
+}
+.navbar {
+  color: #fff;
+  background-color: var(--main_bg);
+  padding: 1rem 0 !important;
+}
+.navbar > a {
+  color: #fff;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: "Righteous", cursive;
+  letter-spacing: 0.2rem;
+}
+.navbar > a:hover {
+  color: var(--mian_clr);
+}
+.navbar-toggler {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.toggler_icon {
+  width: 2rem;
+  height: 0.3rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin: 0.2rem;
+}
+.navbar ul > li a {
+  font-size: 2rem;
+  color: #fff;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 0.1rem;
+}
+.navbar ul > li a:hover {
+  color: var(--mian_clr);
+}
+.navbar ul > li a:focus {
+  color: var(--mian_clr);
+}
+.navbar ul > li {
+  margin: 0 0 0 2rem;
+}
+
+/* header arae  */
+.mian_header_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.mian_header_left p {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-family: "Righteous", cursive;
+}
+.mian_header_left h1 {
+  font-size: 5rem;
+  text-transform: capitalize;
+  font-family: "Righteous", cursive;
+  margin-top: 1rem;
+}
+.txt_clr {
+  color: var(--mian_clr);
+}
+.btn-primary {
+  font-size: 1.6rem !important;
+  margin-top: 2rem;
+  border-radius: 20px !important;
+  padding: 0.5rem 2rem !important;
+}
+
+.mian_header_right {
+  height: 45rem;
+}
+
+/* footer area */
+footer {
+  width: 100%;
+  margin-top: auto;
+  background-color: var(--mian_clr);
+}
+footer p {
+  text-align: center;
+  color: #fff;
+  line-height: 100%;
+  font-size: 1.8rem;
+  line-height: 5rem;
+  z-index: 10;
+}
+footer p a {
+  color: #000;
+}
+
+/*  */
+/* about code */
+/*  */
+.mian_header_right figure {
+  width: 100%;
+  height: 100%;
+  padding: 5rem 6rem;
+}
+.mian_header_right figure img {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(-3px -3px 20px var(--mian_clr));
+}
+
+/*  */
+/* error page code  */
+.errorArea {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.errorArea figure {
+  width: 40rem;
+}
+.errorArea img {
+  width: 100%;
+  height: 100%;
+}
+.errorArea p {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-family: "Righteous", cursive;
+}
+.errorArea button {
+  border-radius: 20px !important;
+}
+.errorArea button a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+/*  */
+/* weather code  */
+/*  */
+.mian_weather_app {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5rem;
+}
+.mian_weather_app .search_box {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+.search_box input {
+  width: 85%;
+  font-size: 2.5rem;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  border-bottom: 2px solid #007aff;
+  transition: border 0.5s linear;
+}
+.search_box input:focus {
+  border-bottom-color: #4abfa4;
+}
+.search_box button {
+  border: none;
+  width: 6rem;
+  height: 6rem;
+  padding: 0 0.5rem;
+  border-radius: 50px;
+  background-color: #007aff;
+  outline: none !important;
+}
+.search_box button:hover {
+  background-color: #4abfa4;
+}
+.search_box button i {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.mian_weather_app .main_viewbox {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.main_viewbox .top_layer {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007aff;
+  border-radius: 5px;
+}
+.top_layer p {
+  font-size: 1.6rem;
+  margin: 0;
+  color: #fff;
+}
+.top_layer p:nth-child(2) {
+  font-size: 2.5rem;
+}
+.bottom_layer {
+  margin-top: 7px;
+  width: 100%;
+  background-color: #4abfa4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.bottom_layer > h1 {
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 1.5rem;
+  background-color: #39a88e;
+  color: #fff;
+  font-size: 3rem;
+}
+.bottom_layer .status {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.status h1 {
+  font-size: 7rem;
+  color: #fff;
+}
+.status i {
+  font-size: 8rem;
+  color: #fff;
+}
+/*  */
+/*  */
+/*  */
+@media (max-width: 786px) {
+  html {
+    font-size: 50%;
+  }
+  .mian_header_left {
+    margin-top: 5rem !important;
+    margin-bottom: 5rem !important;
+    margin-left: 2rem;
+  }
+  footer p {
+    line-height: 3rem;
+  }
+  .errorArea p {
+    font-size: 2rem;
+  }
+  .mian_weather_app .search_box {
+    width: 90%;
+  }
+  .mian_weather_app .main_viewbox {
+    width: 90%;
+  }
+}
