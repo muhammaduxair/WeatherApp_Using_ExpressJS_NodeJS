@@ -6,6 +6,6 @@
 
 ### step:1 `npm install`
 
-### step:2 `node src/index.js -e js,hbs`
+### step:2 `npm start`
 
 ## Author: Muhammad Uzair
