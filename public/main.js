@@ -35,7 +35,7 @@ const weather = async () => {
     return;
   } else {
     const data = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&units=metric&appid=f0da3a25b015cadb88adc5523af4d0b3`
+      `//api.openweathermap.org/data/2.5/weather?q=${cityName.value}&units=metric&appid=f0da3a25b015cadb88adc5523af4d0b3`
     );
     const realData = await data.json();
     if (realData.message == "city not found") {
